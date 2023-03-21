@@ -1,12 +1,18 @@
 # Primer Hola Mundo
 print("Hola Mundo Python")
 
+
+valor_Comilla_Doble = "Comentario en varias lineas"
+
 """
 Comentario 
 en 
 varias 
 líneas con doble comilla
 """
+
+valor_Comilla_Simple = 'Comentario en varias lineas'
+
 '''
 Comentario 
 en 
@@ -23,6 +29,3 @@ print(type("Hola Type")) # en este caso un String
 print(type(123)) # en este caso un Integer
 print(type(12.1)) # en este caso es un Float
 print(type(True)) # en este caso es un Booleano
-
-
-
