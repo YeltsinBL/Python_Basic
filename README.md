@@ -2,8 +2,11 @@
 ## _Iniciando en la programación con Python_
 Descripción de lo realizado en este repositorio
 
-Dentro de `Variables` se realizó:
-En `01-Variables` se hizo los tipos de variables más utilizados:
+
+## Variables
+
+### Tipos
+En `01-Tipos` se hizo los tipos de variables más utilizados:
 - Int: representa los valores enteros.
 - Float: representa todos los números decimales.
 - String: representa los caracteres (letras y números) dentro de comillas simples o dobles.
@@ -124,6 +127,21 @@ print(bool(None)) # False
 print(bool(" ")) # True
 print(bool(0)) # False
 ```
+
+## Control-Flujo
+
+### Comparadores Lógicos
+
+| Comparadores | Descripción |
+| ------ | ------ |
+| > |print(1 > 2) # False |
+| < |print(1 < 2) # True |
+| >= |print(1 >= 2) # False |
+| <= |print(1 <= 2) # True |
+| == |print(1 == 2) # False |
+| != |print(1 != 2) # True |
+| !=  |print(1 != "1") # True |
+
 
 
 [//]: # (Enlaces a la documentación)
