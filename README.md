@@ -182,7 +182,6 @@ if not cosa and (persona or animal):
 else : print("No toda la evaluación es True")
 ```
 
-
 ### FOR
 
 En `04-For` se hizo un ejemplo de como usarlo:
@@ -203,6 +202,23 @@ else:
 
 ```
 - El ELSE al final del For se debe de utilizar con un Break, porque al termina de recorrer la lista lo ejecutará igualmente, en cambio; con el Break termina la secuencia y no lo ejecuta.
+
+
+### WHILE
+
+En `05-While` se hizo un ejemplo de como usarlo:
+- También es un Loop al igual que el For 
+pero se ejecuta siempre y cuando se cumpla la condición.
+
+```sh
+numero = 1
+while numero < 10:
+    print(numero)
+    numero *= 2
+    if numero == 4:
+        break
+```
+- Al igual que en el For, el break corta la ejecución y no se utiliza el ELSE al final.
 
 
 
