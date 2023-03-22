@@ -130,6 +130,8 @@ print(bool(0)) # False
 
 ## Control-Flujo
 
+Para saber más sobre Control de Flujo puede entrar [aquí][controlFlujo]
+
 ### Comparadores Lógicos
 
 | Comparadores | Descripción |
@@ -142,6 +144,27 @@ print(bool(0)) # False
 | != |print(1 != 2) # True |
 | !=  |print(1 != "1") # True |
 
+### IF y Operador Termario
+
+En `02-IFyOperadorTermario` se hizo el flujo del IF y un Operador Termario:
+- IF: es muy habitual usarlo.
+- Operador Termario: solo se usa en ciertas ocasiones.
+
+```sh
+edad = 24
+
+# IF
+if edad > 60:
+    print("Accedió al adulto mayor")
+elif edad >17:
+    print ("Ya es mayor de edad")
+else: print("Aún es menor de edad")
+
+# Operador Termario
+mensaje = "Es mayor de edad" if edad > 17 else "Es menor de edad"
+print(mensaje)
+```
+
 
 
 [//]: # (Enlaces a la documentación)
@@ -150,3 +173,4 @@ print(bool(0)) # False
 [metodosString]: <https://docs.python.org/3/library/stdtypes.html#string-methods>
 [secuenciaescape]: <https://docs.python.org/es/3/reference/lexical_analysis.html#literals>
 [moduloMath]:<https://docs.python.org/3/library/math.html>
+[controlFlujo]:<https://docs.python.org/es/3/tutorial/controlflow.html>
