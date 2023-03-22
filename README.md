@@ -112,6 +112,19 @@ print(math.sqrt(9)) # 3
 Para más ejemplos de Funciones usando el Módulo Math puede entrar [aquí][moduloMath]
 
 
+### Boolean
+
+En `04-Boolean` se hizo las converiones para saber cuando se obtienen False y True:
+- Solo devuelve False cuando son de tipo: "", None, 0.
+
+```sh
+print(bool("")) # False
+print(bool("0")) # True
+print(bool(None)) # False
+print(bool(" ")) # True
+print(bool(0)) # False
+```
+
 
 [//]: # (Enlaces a la documentación)
 
