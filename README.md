@@ -183,6 +183,30 @@ else : print("No toda la evaluación es True")
 ```
 
 
+### FOR
+
+En `04-For` se hizo un ejemplo de como usarlo:
+- Sirve para poder iterar, buscar y más dentro de una lista y/o string.
+
+```sh
+
+buscar = 2
+
+# el Range es un iterable
+for numero in range(5):
+    print(numero)
+    if numero == buscar:
+        print("Encontrado")
+        break
+else:
+    print("No encontrado")
+
+```
+- El ELSE al final del For se debe de utilizar con un Break, porque al termina de recorrer la lista lo ejecutará igualmente, en cambio; con el Break termina la secuencia y no lo ejecuta.
+
+
+
+
 [//]: # (Enlaces a la documentación)
 
 [formatearString]: <https://docs.python.org/es/3/reference/lexical_analysis.html#formatted-string-literals>
