@@ -79,4 +79,4 @@ salto_de_linea_En_String = "Python \n\"Básico\""
 print("Salto de Linea:",salto_de_linea_En_String)
 # Elimina una posición de lo que haya atrás
 eliminar_En_String = "Python \b\"Básico\""
-print("Eliminar lo que hay en una posición atras:",eliminar_En_String)
+print("Eliminar lo que hay en una posición atrás:",eliminar_En_String)

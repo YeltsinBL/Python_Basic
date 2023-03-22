@@ -10,6 +10,8 @@ En `01-Variables` se hizo los tipos de variables más utilizados:
 
 > Nota: para hacer los comentarios se utilizan: el hashtag (#) para hacer comentarios en una sola línea y triple comillas simples o dobles iniciales y finales ("""texto""" ó '''texto''') para comentar en varias líneas.
 
+### Strings
+
 En `02-Strings` se hizo la forma de Acceder a un String en su Posición:
 - 'Acceder a un caracter de la posición indicada': agregando al final de la variable un corchete con el número de la posición.
 - 'Acceder al caracter desde-hasta la posición indicada': agregando al final de la variable un corchete con dos números separados por los dos puntos.
@@ -53,6 +55,11 @@ En `02-Strings` se hizo agregó algunos Métodos de String:
 - in: verifica si existe la palabra ingresada dentro del String y devuelve un booleano.
 - not in: verifica si no existe la palabra ingresada dentro del String y devuelve un booleano.
 
+```sh
+print("de" in metodo_String)
+print("uso" not in metodo_String)
+```
+
 Para más ejemplos de los Métodos puede entrar [aquí][metodosString]
 
 En `02-Strings` se hizo algunas Secuencias de Escape para agregar al String:
@@ -62,8 +69,47 @@ En `02-Strings` se hizo algunas Secuencias de Escape para agregar al String:
 -- \n: hace un salto de linea.
 -- \b: elimina la posición anterior donde se ha agregado..
 
+```sh
+eliminar_En_String = "Python \b\"Básico\""
+print("Eliminar lo que hay en una posición atrás:",eliminar_En_String)
+```
+
 Para más ejemplos de las Secuencias puede entrar [aquí][secuenciaescape]
 
+### Números
+
+En `03-Numeros`  se hizo los operadores matemáticos con notación:
+
+| Operadores con Notación | Descripción |
+| ------ | ------ |
+| += | suma ( 2 += 2) |
+| -= | resta ( 2 -= 2) |
+| *= | multiplicación ( 2 *= 2) |
+| /= | división ( 2 /= 2) |
+| //= | división entera ( 2 //= 2) |
+| **= | potencia ( 2 **= 2) |
+| %=  | módulo-residuo de división ( 2 %= 2) |
+
+En `03-Numeros`  se utilizó algunas funciones nativas y del módulo 'Math':
+- Nativas:
+-- Round: redondeda el número.
+-- Abs: devuelve el valor obsoluto del número.
+- Módulo Math:
+-- ceil: devuelve el número superior entero más cercano: 2.
+-- floor: devuelve el número inferior entero más cercano: 1.
+-- isnan: acepta solo número reales y devuelve un boolean negandolo.
+-- pow: eleva a la potencia.
+-- sqrt: devuelve la raíz cuadrada.
+
+```sh
+print(math.ceil(1.1)) # 2
+print(math.floor(1.99)) # 1
+print(math.isnan(7)) # false
+print(math.pow(10,2)) # 100
+print(math.sqrt(9)) # 3
+```
+
+Para más ejemplos de Funciones usando el Módulo Math puede entrar [aquí][moduloMath]
 
 
 
@@ -72,3 +118,4 @@ Para más ejemplos de las Secuencias puede entrar [aquí][secuenciaescape]
 [formatearString]: <https://docs.python.org/es/3/reference/lexical_analysis.html#formatted-string-literals>
 [metodosString]: <https://docs.python.org/3/library/stdtypes.html#string-methods>
 [secuenciaescape]: <https://docs.python.org/es/3/reference/lexical_analysis.html#literals>
+[moduloMath]:<https://docs.python.org/3/library/math.html>
