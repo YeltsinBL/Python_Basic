@@ -421,6 +421,39 @@ numeros = list(range(1, 21))
 print(numeros[4:15:2])
 ```
 
+### Obtener los datos de una Lista
+En `03-Obtener_Datos_Lista` se realizó las formas en cómo obtener los datos de una lista.
+- Utilizando directamente el índice.
+```sh
+numeros = [1, 2, 3,4,5,6,7,8]
+# Utilizando el Indice
+uno = numeros[0]
+dos = numeros[1]
+tres = numeros[2]
+print(uno, dos, tres)
+```
+- Asignando directamente a las variables en una misma línea con una variable iterable obligatoria.
+-- La variable iterable tambien se usa como [parámetro en una función][parametroIterable]. 
+```sh
+numeros = [1, 2, 3,4,5,6,7,8]
+primero, segundo, *mas,ultimo = numeros
+print(primero, segundo, mas, ultimo) #1 2 [3, 4, 5, 6, 7] 8
+```
+- Utilizando For para obtener solo los datos.
+ ```sh
+ numeros = [1, 2, 3,4,5,6,7,8]
+for numero in numeros:
+    print(numero)
+ ```
+ - Utilizando For para obtener los datos con sus índices.
+ -- El Enumerate devuelve la posición/índice de lo que se le pase en ese orden.
+ ```sh
+ numeros = [1, 2, 3,4,5,6,7,8]
+for indice, numero in enumerate(numeros):
+    print(indice, numero)
+ ```
+
+
 [//]: # (Enlaces a la documentación)
 
 [tiposVariables]: <https://docs.python.org/3/library/stdtypes.html#>
@@ -431,4 +464,5 @@ print(numeros[4:15:2])
 [controlFlujo]:<https://docs.python.org/es/3/tutorial/controlflow.html>
 [funciones]:<https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
 [listas]:<https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
-[stringReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
+[stringReadme]: #Strings <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
+[parametroIterable]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
