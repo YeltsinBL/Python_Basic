@@ -1,4 +1,4 @@
-"""Función con \"X\" paramtros-argumentos """
+"""Función con \"X\" parámetros-argumentos """
 
 def suma(*numeros):
     """esta es una función con un parámetro iterable, 

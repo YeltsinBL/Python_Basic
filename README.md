@@ -299,6 +299,26 @@ suma(2,3,)
 suma(2,3,1,5)
 ```
 
+### Funciones con parámetro de Diccionario
+En `03-KWargs` se llama así "KW" por "KeyWord-Palabra clave", porque al momento de llamar a la función se le debe de pasar el parámetro con su nombre.
+-  Al pasar el parámetro con su nombre, este parámetro dentro de la función es un "Diccionario de datos" ({nombre=valor}).
+
+```sh
+def get_product(**datos):
+    """Cuando hay dos asteriscos en el parámetro, significa que 
+        se utilizará el 'KW' (keyWord-palabra clave) del parámetro
+    """
+    print(datos) # este parámetro será un diccionario de datos: {nombre:valor}
+    print(datos["id"], datos["nombre"]) # acceder a los datos del diccionario
+
+
+ # para utilizar esta función, se debe de dar un nombre al parámetro
+ # sino no funcionará
+get_product(id=21, nombre="Python", desc="Función usando KWargs.")
+```
+> Nota: para acceder a los valores de los parámetros dentro de la función, se puede acceder utilizando los corchetes e ingresando el nombre del parámetro que es el "KW". Si los nombres no son iguales o no lo has enviado a la función, esta te dará un error.
+
+
 
 [//]: # (Enlaces a la documentación)
 
