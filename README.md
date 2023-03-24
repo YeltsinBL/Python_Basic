@@ -433,7 +433,7 @@ tres = numeros[2]
 print(uno, dos, tres)
 ```
 - Asignando directamente a las variables en una misma línea: con una variable iterable obligatoria.
--- La variable iterable tambien se usa como [parámetro en una función][parametroIterable]. 
+- La variable iterable tambien se usa como [parámetro en una función][parametroIterable]. 
 ```sh
 numeros = [1, 2, 3,4,5,6,7,8]
 primero, segundo, *mas,ultimo = numeros
@@ -446,12 +446,45 @@ for numero in numeros:
     print(numero)
  ```
  - Utilizando For para obtener los datos con sus índices: con un 'Enumerate'.
- -- El Enumerate devuelve la posición/índice de lo que se le pase en ese orden.
+ - El Enumerate devuelve la posición/índice de lo que se le pase en ese orden.
  ```sh
  numeros = [1, 2, 3,4,5,6,7,8]
 for indice, numero in enumerate(numeros):
     print(indice, numero)
  ```
+
+### Obtener los datos de una Lista
+En [`04-Buscar_Modificar_Lista`][buscarModificarLista] se realizaron algunos ejemplos:
+- Buscar por el valor del elemento usando 'index': la búsqueda es de izquierda a derecha, si se repite el valor del elemento devuelve el índice del primer elemento porque al encontrarlo ya no continúa con la búsqueda.
+- Buscar cuantas veces se repite un elemento.
+- Buscar si existe un valor en los elementos de la lista.
+```sh
+# Búsqueda
+palabras=["Hola", "Python", "Programación", "Ejercicios", "Practica", "Python"]
+print(palabras.index("Python")) # 1
+print(palabras.count("Python")) # 2
+print("Hola" in palabras) # True
+```
+- Agregar un elemento a la lista indicando una posición.
+- Agregar un elemento al final de la lista.
+```sh
+# Agregar
+palabras=["Hola", "Python", "Programación", "Ejercicios", "Practica", "Python"]
+palabras.insert(1,"Agregado") # ["Hola", "Agregado", "Python", "Programación", "Ejercicios", "Practica", "Python"]
+palabras.append("Final") # ["Hola", "Agregado", "Python", "Programación", "Ejercicios", "Practica", "Python", "Final"]
+```
+- Eliminar de acuerdo a la palabra, empieza de izquierda a derecha.
+- Eliminar la última posición
+- Eliminar indicando el índice
+- Eliminar todos los elementos de la lista
+```sh
+# Eliminar
+palabras=["Hola", "Python", "Programación", "Ejercicios", "Practica", "Python"]
+palabras.remove("Python") # ["Hola", "Programación", "Ejercicios", "Practica", "Python"]
+palabras.pop() # ["Hola", "Python", "Programación", "Ejercicios", "Practica"]
+palabras.pop(3) # ["Hola", "Python", "Programación", "Practica", "Python"]
+palabras.clear() # []
+```
 
 
 [//]: # (Enlaces a la documentación)
@@ -464,5 +497,8 @@ for indice, numero in enumerate(numeros):
 [controlFlujo]: <https://docs.python.org/es/3/tutorial/controlflow.html>
 [funciones]: <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
 [listas]: <https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
+
 [stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
 [parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
+
+[buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
