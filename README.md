@@ -243,6 +243,8 @@ for x in range(6):
 
 ## FUNCIONES
 
+Para saber más sobre Funciones puede entrar [aquí][funciones]
+
 ### Funciones sin/con parámetros y opcionales
 En `01-Funcion` se hizo un ejemplos de funciones:
 - Para crear una función se utiliza la palabra reservada 'def' seguida por el 'nombre de la función' con 'paréntesis'  y terminando con 'doble punto'.
@@ -373,6 +375,33 @@ sumar()
 print(inicio)
 ```
 
+## TIPOS AVANZADOS
+
+### Listas
+En `01-Listas` se hizo los tipos de listas en que se pueden crear.
+- Para crear una lista solo vasta usar los corchetas y agregar datos dentros.
+
+```sh
+lista_vacia = []
+numeros = [0, 1, 2, 3]
+letras = ["a", "b", "c"]
+palabras = ["hola", "python", "listas"]
+booleanos = [True, False, False, True]
+matriz = [[0, 1], [1, 0]]
+ceros = [0] * 5  # repite la cantidad de la lista por el número indicado
+letra_a = ["a"] * 5
+```
+- También se puede crear listas usando la clase integrada 'list' que acepta como parámetros datos iterables:
+```sh
+rango = list(range(1, 11))
+unir_cero_a = list(ceros + letra_a)
+numero_list=list([0,1,2,3])
+caracteres= list("caracteres") # obtenemos todas las letras separadas
+```
+
+Para saber más sobre Listas puede entrar [aquí][listas]
+
+
 [//]: # (Enlaces a la documentación)
 
 [tiposVariables]: <https://docs.python.org/3/library/stdtypes.html#>
@@ -381,3 +410,5 @@ print(inicio)
 [secuenciaescape]: <https://docs.python.org/es/3/reference/lexical_analysis.html#literals>
 [moduloMath]:<https://docs.python.org/3/library/math.html>
 [controlFlujo]:<https://docs.python.org/es/3/tutorial/controlflow.html>
+[funciones]:<https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
+[listas]:<https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
