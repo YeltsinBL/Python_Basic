@@ -13,3 +13,10 @@ while numero < 10:
     numero *= 2
     if numero == 4:
         break
+
+"""While Infinitos"""
+
+while True:
+    comando = input("$ ")
+    if comando.lower() == "salir":
+        break

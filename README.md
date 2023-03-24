@@ -218,7 +218,26 @@ while numero < 10:
     if numero == 4:
         break
 ```
-- Al igual que en el For, el break corta la ejecución y no se utiliza el ELSE al final.
+- Al igual que en el For, el break corta la ejecución y no se utiliza el ELSE al final, mayormente se utilizan en 'While Infinitos'.
+
+```sh
+numero = 1
+while True:
+    comando = input("$ ")
+    if comando.lower() == "salir":
+        break
+```
+
+### Loop Anidado
+
+En `06-Loop_Anidado` se hizo un ejemplo usando un For dentro de otro For:
+- El primero For no continuará hasta que el for de adentro termine de iterar.
+
+```sh
+for x in range(6):
+    for j in range(2):
+        print(x,j)
+```
 
 
 
