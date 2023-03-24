@@ -401,6 +401,25 @@ caracteres= list("caracteres") # obtenemos todas las letras separadas
 
 Para saber más sobre Listas puede entrar [aquí][listas]
 
+### Acceder a los elementos de la Lista
+En `02-Accediendo_Listas` se utilizó la posición de sus indices para acceder a los elementos, al igual que se hizo con los [String][stringReadme].
+```sh
+palabras = ["Hola", "Python", "Accediendo", "Datos", "Listas", "Ejemplo"]
+palabras[0] = "Cambio"  # cambiamos el nombre indicando cual es el indice
+print(palabras)
+print(palabras[2:])
+print(palabras[-1])  # accedemos al último elemento de la lista
+# escogemos los elementos de la lista, desde el índice de inicio luego todos los indices sumados el valor indicado
+print(palabras[::2])
+# escogemos los elementos de la lista, indicando el índice de inicio luego todos los indices sumados el valor indicado
+print(palabras[1::2])
+# escogemos los elementos de la lista, indicando el índice de inicio y el índice final, luego sumamos el valor indicado al índice.
+print(palabras[1:4:2])
+
+numeros = list(range(1, 21))
+# obtenemos todos los números negativos desde el 5 al 15
+print(numeros[4:15:2])
+```
 
 [//]: # (Enlaces a la documentación)
 
@@ -412,3 +431,4 @@ Para saber más sobre Listas puede entrar [aquí][listas]
 [controlFlujo]:<https://docs.python.org/es/3/tutorial/controlflow.html>
 [funciones]:<https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
 [listas]:<https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
+[stringReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
