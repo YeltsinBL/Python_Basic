@@ -351,9 +351,10 @@ sumar()
 print(inicio)
 ```
 > Nota: se debe de tener un exigente cuidado al usar esta forma, debido a que las variables no son fuertemente tipadas y se puede cambiar facilmente el tipo de dato, dándose cuenta si hubo un error solo al momento de ejecutar el código.
-inicio = 8
 
 ```sh
+inicio = 8
+
 def sumar():
     global inicio 
     inicio +=1
