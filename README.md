@@ -319,6 +319,21 @@ get_product(id=21, nombre="Python", desc="Función usando KWargs.")
 > Nota: para acceder a los valores de los parámetros dentro de la función, se puede acceder utilizando los corchetes e ingresando el nombre del parámetro que es el "KW". Si los nombres no son iguales o no lo has enviado a la función, esta te dará un error.
 
 
+### Función que devuelva un dato
+En `04-Return` se hizo una función que después de operar devuelve un valor.
+- La palabra reservada Return dentro de una función, se usa para devolver un valor.
+
+```sh
+def suma(a, b):
+    """Con la palabra reservada Return, se puede devolver un valor desde la función"""
+    return a + b
+
+c = suma(5,1)
+
+print(c)
+
+```
+
 
 [//]: # (Enlaces a la documentación)
 
