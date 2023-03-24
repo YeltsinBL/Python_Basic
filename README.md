@@ -13,6 +13,8 @@ En `01-Tipos` se hizo los tipos de variables más utilizados:
 
 > Nota: para hacer los comentarios se utilizan: el hashtag (#) para hacer comentarios en una sola línea y triple comillas simples o dobles iniciales y finales ("""texto""" ó '''texto''') para comentar en varias líneas.
 
+Para más ejemplos de los Tipos de Variables puede entrar [aquí][tiposVariables]
+
 ### Strings
 
 En `02-Strings` se hizo la forma de Acceder a un String en su Posición:
@@ -239,11 +241,50 @@ for x in range(6):
         print(x,j)
 ```
 
+## FUNCIONES
+
+### Funciones sin/con parámetros y opcionales
+En `01-Funcion` se hizo un ejemplos de funciones:
+- Para crear una función se utiliza la palabra reservada 'def' seguida por el 'nombre de la función' con 'paréntesis'  y terminando con 'doble punto'.
+- Función sin parametro:
+
+```sh
+def hola():
+    """Mostrar un simple Hola"""
+    print("Hola")
+
+hola()
+```
+- Función con Parámetro Obligatorio.
+
+```sh
+def hola_nombre(nombre):
+    """Mostrar un Hola pasandole un dato"""
+    print(f"Hola {nombre}")
+
+hola_nombre("Yeltsin")
+```
+- Función con Parámetro Opcional.
+
+```sh
+def hola_nombre_opcional(nombre, apellido = "Baltodano"):
+    """Mostrar un Hola pasandole un dato opcional"""
+    print(f"Hola {nombre} {apellido}")
+
+hola_nombre_opcional("Yeltsin")
+hola_nombre_opcional("Yeltsin", "León")
+```
+- Utilización de la función nombrando sus parámetros.
+
+```sh
+hola_nombre_opcional(apellido="BL",nombre="Guillermo")
+```
 
 
 
 [//]: # (Enlaces a la documentación)
 
+[tiposVariables]: <https://docs.python.org/3/library/stdtypes.html#>
 [formatearString]: <https://docs.python.org/es/3/reference/lexical_analysis.html#formatted-string-literals>
 [metodosString]: <https://docs.python.org/3/library/stdtypes.html#string-methods>
 [secuenciaescape]: <https://docs.python.org/es/3/reference/lexical_analysis.html#literals>
