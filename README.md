@@ -334,6 +334,43 @@ print(c)
 
 ```
 
+### Función accediendo a una variable global
+En `05-Variablle_Global` se hizo un ejemplo de como acceder a una variable fuera de la función.
+- Para acceder a la variable se debe de usar la palabra reservada 'global' seguido del 'nombre de la variable'.
+
+```sh
+inicio = 8
+
+def sumar():
+    """acceder al una variable global"""
+    global inicio 
+    inicio +=1
+
+print(inicio)
+sumar()
+print(inicio)
+```
+> Nota: se debe de tener un exigente cuidado al usar esta forma, debido a que las variables no son fuertemente tipadas y se puede cambiar facilmente el tipo de dato, dándose cuenta si hubo un error solo al momento de ejecutar el código.
+inicio = 8
+
+```sh
+def sumar():
+    global inicio 
+    inicio +=1
+
+print(inicio)
+sumar()
+print(inicio)
+
+def cuidado():
+    global inicio
+    inicio = "Cambio de valor"
+
+cuidado()
+print(inicio)
+sumar()
+print(inicio)
+```
 
 [//]: # (Enlaces a la documentación)
 
