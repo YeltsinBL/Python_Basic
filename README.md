@@ -432,7 +432,7 @@ dos = numeros[1]
 tres = numeros[2]
 print(uno, dos, tres)
 ```
-- Asignando directamente a las variables en una misma línea con una variable iterable obligatoria.
+- Asignando directamente a las variables en una misma línea: con una variable iterable obligatoria.
 -- La variable iterable tambien se usa como [parámetro en una función][parametroIterable]. 
 ```sh
 numeros = [1, 2, 3,4,5,6,7,8]
@@ -445,7 +445,7 @@ print(primero, segundo, mas, ultimo) #1 2 [3, 4, 5, 6, 7] 8
 for numero in numeros:
     print(numero)
  ```
- - Utilizando For para obtener los datos con sus índices.
+ - Utilizando For para obtener los datos con sus índices: con un 'Enumerate'.
  -- El Enumerate devuelve la posición/índice de lo que se le pase en ese orden.
  ```sh
  numeros = [1, 2, 3,4,5,6,7,8]
@@ -460,9 +460,9 @@ for indice, numero in enumerate(numeros):
 [formatearString]: <https://docs.python.org/es/3/reference/lexical_analysis.html#formatted-string-literals>
 [metodosString]: <https://docs.python.org/3/library/stdtypes.html#string-methods>
 [secuenciaescape]: <https://docs.python.org/es/3/reference/lexical_analysis.html#literals>
-[moduloMath]:<https://docs.python.org/3/library/math.html>
-[controlFlujo]:<https://docs.python.org/es/3/tutorial/controlflow.html>
-[funciones]:<https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
-[listas]:<https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
-[stringReadme]: #Strings <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
-[parametroIterable]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
+[moduloMath]: <https://docs.python.org/3/library/math.html>
+[controlFlujo]: <https://docs.python.org/es/3/tutorial/controlflow.html>
+[funciones]: <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
+[listas]: <https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
+[stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
+[parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
