@@ -24,16 +24,16 @@ En `02-Strings` se hizo la forma de Acceder a un String en su Posición:
 - 'Acceder al caracter desde el inicio hasta una posición final': agregando al final de la variable un corchete con los dos puntos y luego un número final 
 - 'Acceder al caracter desde el inicio hasta el final': agregando al final de la variable un corchete con los dos puntos.
 
-
-> nombre_lenguaje_programacion = "Python"
-> print("Acceder al caracter desde-hasta en su posición:", nombre_lenguaje_programacion[0:2])
-> print("Acceder al caracter desde una posición hasta el final:",
+```sh
+nombre_lenguaje_programacion = "Python"
+print("Acceder al caracter desde-hasta en su posición:", nombre_lenguaje_programacion[0:2])
+print("Acceder al caracter desde una posición hasta el final:",
       nombre_lenguaje_programacion[3:])
-> print("Acceder al caracter desde inicio hasta una posición:",
+print("Acceder al caracter desde inicio hasta una posición:",
       nombre_lenguaje_programacion[:2])
-> print("Acceder al caracter desde inicio " +
+print("Acceder al caracter desde inicio " +
       "hasta el final de su posición:", nombre_lenguaje_programacion[:])
-
+```
 
 En `02-Strings` se hizo la forma de Formatear los String:
 - Para concatenar o unir dos string se puede usar el '+'.
@@ -280,6 +280,24 @@ hola_nombre_opcional("Yeltsin", "León")
 hola_nombre_opcional(apellido="BL",nombre="Guillermo")
 ```
 
+### Funciones con parámetro Iterable
+En `02-Xargs`  se llama así por "X" argumentos-parámetros que tendrá la función;
+- En este ejemplo se se utiliza el For para recorrerlo:
+
+```sh
+def suma(*numeros):
+    """esta es una función con un parámetro iterable, 
+        no se especifica cuantos parámetros tendrá por lo cual se utiliza
+        el For para recorrerlo"""
+    resultado = 0
+    for numero in numeros:
+        resultado += numero
+    print(resultado)
+
+suma(2,3,1)
+suma(2,3,)
+suma(2,3,1,5)
+```
 
 
 [//]: # (Enlaces a la documentación)
