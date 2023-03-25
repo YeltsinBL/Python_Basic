@@ -575,6 +575,42 @@ print(lista_numeros)
 ```
 > Nota: En las Tuplas no se pueden editar sus valores, solo leerlas. En las Listas si se pueden editar y leer sus valores.
 
+### Sets
+Los [`08-Sets`][sets] son una Colección de datos y se utilizan muy similares a las [listas][listasReadme].
+- Para crear una Tupla se hace con los 'corchetes' o llamando a la clase 'set'.
+```sh
+mas_numeros = {3, 4, 4, 5, 5, 6, 7}
+otra_forma = set([1, 2, 3, 4, 5])
+```
+- No se pueden repetir, no esta ordenada ni se puede acceder a sus datos por el índice.
+```sh
+numeros = {1, 2, 2, 3, 3, 4}
+print(numeros) # {1, 2, 3, 4}
+print(numeros[0]) # error
+```
+- Se puede agregar y eliminar datos al igual que las [listas][listasReadme], algunas de sus funciones tambipen funcionan con los Sets.
+```sh
+numeros.add(5)
+numeros.remove(4)
+```
+- Para acceder a sus datos se tiene que iterar mediante un [For][forReadme]
+```sh
+for numero in numeros:
+    print(numero)
+```
+- Los Operadores en los Sets se utilizan más con los números reales.
+```sh
+# unión de dos Sets
+print(numeros | mas_numeros) # {1, 2, 3, 4, 5, 6, 7}
+# intersección de dos Sets
+print(numeros & mas_numeros) # {3, 5}
+# diferencia: muestra los datos de la primera Tupla y elimina los valores de la primera tupla si es que ya existe en la segunda
+print(numeros - mas_numeros) # {1, 2}
+# diferencia Simétrica: muestra los datos que no intersectan entre la primera y segunda Tupla
+print(numeros ^ mas_numeros) # {1, 2, 4, 6, 7}
+```
+
+
 [//]: # (Enlaces a la documentación)
 
 [tiposVariables]: <https://docs.python.org/3/library/stdtypes.html#>
@@ -595,3 +631,4 @@ print(lista_numeros)
 [ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/05-Ordenar_Lista.py>
 [comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/06-Comprension_Lista.py>
 [tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/07-Tupla.py>
+[sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/08-Sets.py>
