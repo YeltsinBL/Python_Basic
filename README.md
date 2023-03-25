@@ -453,7 +453,7 @@ for indice, numero in enumerate(numeros):
     print(indice, numero)
  ```
 
-### Obtener los datos de una Lista
+### Buscar - Agregar - Eliminar los datos de una Lista
 En [`04-Buscar_Modificar_Lista`][buscarModificarLista] se realizaron algunos ejemplos:
 - Buscar por el valor del elemento usando 'index': la búsqueda es de izquierda a derecha, si se repite el valor del elemento devuelve el índice del primer elemento porque al encontrarlo ya no continúa con la búsqueda.
 - Buscar cuantas veces se repite un elemento.
@@ -486,6 +486,46 @@ palabras.pop(3) # ["Hola", "Python", "Programación", "Practica", "Python"]
 palabras.clear() # []
 ```
 
+### Ordenar los datos de una Lista
+En [`05-Ordenar_Lista`][ordenarLista] se hizo ejemplos usando 'Sort' y 'Sorted':
+- Sort: ordena los elementos en la misma lista.
+- Sorted: crea una nueva lista ordenada a partir de otra lista.
+```sh
+# Usando Sort
+letras = ["a", "c","e","b","d"]
+letras.sort() # ordena de forma ascendente
+letras.sort(reverse=True) # ordena de forma descendente
+print(letras)
+# Usando Sorted
+numeros = [1, 2, 9, 6, 8, 3, 7, 5]
+numeros2 = sorted(numeros) # ordena de forma ascendente
+numeros2 = sorted(numeros, reverse=True) # ordena de forma descendente
+print(numeros2)
+```
+- Para ordenar una lista dentro de otra lista, normalmente se ordena por la primera posición de la lista interior.
+```sh
+usuario = [["Python", 4], ["Ejercicio", 1], ["Ordenar", 5]]
+usuario.sort()
+print(usuario) # [['Ejercicio', 1], ['Ordenar', 5], ['Python', 4]]
+```
+- Pero para ordenar por el identificador o la segunda posición, se puede hacer creando una 'función' o utilizando 'lambda'.
+```sh
+usuario = [["Python", 4], ["Ejercicio", 1], ["Ordenar", 5]]
+# Ordenar de forma ascendente la Lista de Lista por el número creando una función
+def ordenar(elemento):
+    """recibe un iterable para devolver los elementos de la posición 1"""
+    return elemento[1]
+usuario.sort(key=ordenar) 
+print(usuario)
+# Ordenar de forma descendente la Lista de Lista por el número usando Lambda
+usuario.sort(key=lambda elemento: elemento[1], reverse= True)
+print(usuario)
+```
+
+> Nota: 
+En el 'sort' con función, el parámetro 'key' recibe la indicación por cuál elemento ordenar, en este caso, la función 'ordenar' devuelve el identificador.  
+En el 'sort' con lambda, al parámetro 'key' se le especifica que se utilizará la forma 'lambda', en la que el primero 'elemento' hace referencia a la lista que se quiere ordenar y el segundo elemento con el corchete hace referencia por cuál posición/índice de la lista interna se tendrá que ordenar.
+
 
 [//]: # (Enlaces a la documentación)
 
@@ -502,3 +542,4 @@ palabras.clear() # []
 [parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
 
 [buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
+[ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/05-Ordenar_Lista.py>
