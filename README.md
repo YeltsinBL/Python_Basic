@@ -522,10 +522,34 @@ usuario.sort(key=lambda elemento: elemento[1], reverse= True)
 print(usuario)
 ```
 
-> Nota: 
-En el 'sort' con función, el parámetro 'key' recibe la indicación por cuál elemento ordenar, en este caso, la función 'ordenar' devuelve el identificador.  
+> Nota: En el 'sort' con función, el parámetro 'key' recibe la indicación por cuál elemento ordenar, en este caso, la función 'ordenar' devuelve el identificador.  
 En el 'sort' con lambda, al parámetro 'key' se le especifica que se utilizará la forma 'lambda', en la que el primero 'elemento' hace referencia a la lista que se quiere ordenar y el segundo elemento con el corchete hace referencia por cuál posición/índice de la lista interna se tendrá que ordenar.
 
+### Comprensión de Listas
+En [`06-Comprension_Lista`][comprensionLista] obtuvimos los valores de una lista utilizando el [For][forReadme] y la Comprensión de Lista.
+- La forma que tiene una Comprensión de lista es la siguiente: [expresion for item in items].
+```sh
+# Obtener solo los Nombres
+usuarios =[["Python", 4], ["Practica", 2], ["Comprensión", 9]]
+# Usando la Comprensión de lista
+nombres2 = [usuario[0] for usuario in usuarios]
+print(nombres2) # ['Python', 'Practica', 'Comprensión']
+# Usando la Comprensión de lista con filtrado
+nombres2 = [usuario[0] for usuario in usuarios if usuario[1] > 3]
+print(nombres2) # ['Python', 'Comprensión']
+```
+- Lo mismo que se hizo con la Comprensión de Listas se puede hacer usando las funciones de Map y Filter.
+```sh
+usuarios =[["Python", 4], ["Practica", 2], ["Comprensión", 9]]
+# Usando Map
+nombre_map = list(map(lambda usuario:usuario[0], usuarios))
+print(nombre_map)
+# Usando Filter
+nombre_filter = list(filter(lambda usuario:usuario[1] > 3, usuarios))
+print(nombre_filter)
+```
+> Nota: Con la comprensión de lista podemos modificar y filtar una lista.
+Para la programación funcional en vez de usar la Comprensión de Listas se usa el Map y Filter. Utilizar cualquiera de las dos formas esta bien.
 
 [//]: # (Enlaces a la documentación)
 
@@ -540,6 +564,8 @@ En el 'sort' con lambda, al parámetro 'key' se le especifica que se utilizará 
 
 [stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
 [parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
+[forReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#for>
 
 [buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
 [ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/05-Ordenar_Lista.py>
+[comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/06-Comprension_Lista.py>
