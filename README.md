@@ -610,6 +610,50 @@ print(numeros - mas_numeros) # {1, 2}
 print(numeros ^ mas_numeros) # {1, 2, 4, 6, 7}
 ```
 
+### Diccionario
+Los [`09-Diccionario`][diccionario] son una colección de datos que se encuentran agrupados por una clave:valor (json).
+- Creación de un Diccionario.
+```sh
+datos = {"id": 1, "nombre": "Python", "otros": [{"ubicacion": "Peru"}]}
+```
+- Acceder al valor mediante la palabra clave.
+```sh
+print(datos["otros"]) # [{'ubicacion': 'Peru'}]
+# print(datos["estado"]) # si no existe la palabra clave muestra error
+```
+- Agregar y verificar si existe la palabra clave.
+```sh
+datos["descripcion"] = "Agregar"
+print("ciudad" in datos)
+```
+- Otra forma de acceder al valor y si no existe la palabra clave muestrar mensaje por defecto
+```sh
+print(datos.get("estado"))  # si no existe muestra 'None'
+print(datos.get("estado", "No existe"))
+```
+- Iterando el diccionario mediante el [For][forReadme].
+```sh
+# acceder solo a las claves
+for valor in datos:
+    print(valor)
+# Acceder a la clave:valor en forma de tuplas
+for valor in datos.items():
+    print(valor)
+# Acceder a la clave:valor por separado
+for clave,valor in datos.items():
+    print(clave,valor)
+```
+- Iterando una lista de diccionarios para obtener los nombres.
+```sh
+usuarios = [
+    {"id": 1, "nombre": "Python"},
+    {"id": 2, "nombre": "Practica"},
+    {"id": 3, "nombre": "Iterar"},
+]
+for usuario in usuarios:
+    print(usuario["nombre"])
+```
+
 
 [//]: # (Enlaces a la documentación)
 
@@ -632,3 +676,4 @@ print(numeros ^ mas_numeros) # {1, 2, 4, 6, 7}
 [comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/06-Comprension_Lista.py>
 [tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/07-Tupla.py>
 [sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/08-Sets.py>
+[diccionario]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/09-Diccionario.py>
