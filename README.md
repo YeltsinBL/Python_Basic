@@ -551,6 +551,30 @@ print(nombre_filter)
 > Nota: Con la comprensión de lista podemos modificar y filtar una lista.
 Para la programación funcional en vez de usar la Comprensión de Listas se usa el Map y Filter. Utilizar cualquiera de las dos formas esta bien.
 
+### Tuplas
+En [`07-Tupla`][tupla] todos los ejemplos son iguales a lo que se puede hacer con una [lista][listasReadme], excepto que no se pueden modificar sus elementos, solo son de modo lectura.
+- Para crear una Tupla se hace con los 'paréntesis' o llamando a la clase 'tuple'.
+```sh
+numeros = (1, 2, 3)
+numeros_otros = tuple([0, 1, 2,3,4,5])
+```
+- Todas las operaciones son las mismas que una lista.
+```sh
+numeros_escogido = numeros[:2]
+primer, segundo, *otros = numeros_otros
+print(primer, segundo, otros)
+
+for n in numeros:
+    print(n)
+```
+- Para modificar los valores de una Tupla, se tiene que crear una lista a partir de la Tupla y modificar los valores de la lista creada.
+```sh
+lista_numeros = list(numeros_otros)
+lista_numeros[1] = 80
+print(lista_numeros)
+```
+> Nota: En las Tuplas no se pueden editar sus valores, solo leerlas. En las Listas si se pueden editar y leer sus valores.
+
 [//]: # (Enlaces a la documentación)
 
 [tiposVariables]: <https://docs.python.org/3/library/stdtypes.html#>
@@ -565,7 +589,9 @@ Para la programación funcional en vez de usar la Comprensión de Listas se usa 
 [stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
 [parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
 [forReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#for>
+[listasReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#listas>
 
 [buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
 [ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/05-Ordenar_Lista.py>
 [comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/06-Comprension_Lista.py>
+[tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/07-Tupla.py>
