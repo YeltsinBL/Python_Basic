@@ -654,6 +654,26 @@ for usuario in usuarios:
     print(usuario["nombre"])
 ```
 
+### Operador Desempaquetar
+El [`10-Operador_Desempaquetar`][operadorDesempaquetar] se utiliza para obtener todos los elementos de un iterable.
+- Desempaquetar Listas y tuplas: se utiliza un asterisco '*' y se pueden combinar.
+```sh
+numero_lista = [1, 2, 3, 4]
+print(*numero_lista) # 1 2 3 4
+numero_tupla = (1,2)
+print(*numero_tupla) # 1 2
+
+print(*numero_lista, *numero_tupla) #1 2 3 4 1 2
+```
+- Desempaquetar Diccionarios: se utiliza dos asteriscos '**' y se también se pueden combinar .
+```sh
+datos = {"id": 1, "nombre": "Python"}
+ubicacion = {"pais": "Peru", "codigo": 0000}
+nuevo_diccionario = {**datos, 
+                     "ubicacion": [{**ubicacion, "numero":1111}], 
+                     "descripcion": "editar diccionario"}
+print(nuevo_diccionario)
+```
 
 [//]: # (Enlaces a la documentación)
 
@@ -677,3 +697,4 @@ for usuario in usuarios:
 [tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/07-Tupla.py>
 [sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/08-Sets.py>
 [diccionario]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/09-Diccionario.py>
+[operadorDesempaquetar]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/10-Operador_Desempaquetar.py>
