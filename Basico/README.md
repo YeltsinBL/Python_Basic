@@ -6,7 +6,7 @@ Descripción de lo realizado en cada uno de los archivos que contienen las carpe
 ## Variables
 
 ### Tipos
-En `01-Tipos` se hizo los tipos de variables más utilizados:
+En [`01-Tipos`][variableTipo] se hizo los tipos de variables más utilizados:
 - Int: representa los valores enteros.
 - Float: representa todos los números decimales.
 - String: representa los caracteres (letras y números) dentro de comillas simples o dobles.
@@ -17,7 +17,7 @@ Para más ejemplos de los Tipos de Variables puede entrar [aquí][tiposVariables
 
 ### Strings
 
-En `02-Strings` se hizo la forma de Acceder a un String en su Posición:
+En [`02-Strings`][variableString] se hizo la forma de Acceder a un String en su Posición:
 - 'Acceder a un caracter de la posición indicada': agregando al final de la variable un corchete con el número de la posición.
 - 'Acceder al caracter desde-hasta la posición indicada': agregando al final de la variable un corchete con dos números separados por los dos puntos.
 - 'Acceder al caracter desde una posición inicial hasta el final': agregando al final de la variable un corchete con un número inicial y luego los dos puntos.
@@ -83,7 +83,7 @@ Para más ejemplos de las Secuencias puede entrar [aquí][secuenciaescape]
 
 ### Números
 
-En `03-Numeros`  se hizo los operadores matemáticos con notación:
+En [`03-Numeros`][variableNumero]  se hizo los operadores matemáticos con notación:
 
 | Operadores con Notación | Descripción |
 | ------ | ------ |
@@ -119,7 +119,7 @@ Para más ejemplos de Funciones usando el Módulo Math puede entrar [aquí][modu
 
 ### Boolean
 
-En `04-Boolean` se hizo las converiones para saber cuando se obtienen False y True:
+En [`04-Boolean`][variableBoolean] se hizo las converiones para saber cuando se obtienen False y True:
 - Solo devuelve False cuando son de tipo: "", None, 0.
 
 ```sh
@@ -136,6 +136,7 @@ Para saber más sobre Control de Flujo puede entrar [aquí][controlFlujo]
 
 ### Comparadores Lógicos
 
+En [`01-Comparadores_Logicos`][ctrlComparadores] se hizo algunos ejemplos con comparadores más usados-
 | Comparadores | Descripción |
 | ------ | ------ |
 | > |print(1 > 2) # False |
@@ -148,7 +149,7 @@ Para saber más sobre Control de Flujo puede entrar [aquí][controlFlujo]
 
 ### IF y Operador Termario
 
-En `02-IFyOperadorTermario` se hizo el flujo del IF y un Operador Termario:
+En [`02-IFyOperadorTermario`][ctrlIf] se hizo el flujo del IF y un Operador Termario:
 - IF: es muy habitual usarlo.
 - Operador Termario: solo se usa en ciertas ocasiones.
 
@@ -169,7 +170,7 @@ print(mensaje)
 
 ### Operadores Lógicos
 
-En `03-Operadores_Logicos` se hizo un ejemplo usando: and, or y not
+En [`03-Operadores_Logicos`][ctrlOperadores] se hizo un ejemplo usando: and, or y not
 
 | Operadores Lógicos | Descripción |
 | ------ | ------ |
@@ -186,7 +187,7 @@ else : print("No toda la evaluación es True")
 
 ### FOR
 
-En `04-For` se hizo un ejemplo de como usarlo:
+En [`04-For`][ctrlFor] se hizo un ejemplo de como usarlo:
 - Sirve para poder iterar, buscar y más dentro de una lista y/o string.
 
 ```sh
@@ -208,7 +209,7 @@ else:
 
 ### WHILE
 
-En `05-While` se hizo un ejemplo de como usarlo:
+En [`05-While`][ctrlWhile] se hizo un ejemplo de como usarlo:
 - También es un Loop al igual que el For 
 pero se ejecuta siempre y cuando se cumpla la condición.
 
@@ -232,7 +233,7 @@ while True:
 
 ### Loop Anidado
 
-En `06-Loop_Anidado` se hizo un ejemplo usando un For dentro de otro For:
+En [`06-Loop_Anidado`][ctrlLoop] se hizo un ejemplo usando un For dentro de otro For:
 - El primero For no continuará hasta que el for de adentro termine de iterar.
 
 ```sh
@@ -246,7 +247,7 @@ for x in range(6):
 Para saber más sobre Funciones puede entrar [aquí][funciones]
 
 ### Funciones sin/con parámetros y opcionales
-En `01-Funcion` se hizo un ejemplos de funciones:
+En [`01-Funcion`][funcFuncion] se hizo un ejemplos de funciones:
 - Para crear una función se utiliza la palabra reservada 'def' seguida por el 'nombre de la función' con 'paréntesis'  y terminando con 'doble punto'.
 - Función sin parametro:
 
@@ -283,7 +284,7 @@ hola_nombre_opcional(apellido="BL",nombre="Guillermo")
 ```
 
 ### Funciones con parámetro Iterable
-En `02-Xargs`  se llama así por "X" argumentos-parámetros que tendrá la función;
+En [`02-Xargs`][funcXargs] se llama así por "X" argumentos-parámetros que tendrá la función;
 - En este ejemplo se se utiliza el For para recorrerlo:
 
 ```sh
@@ -302,7 +303,7 @@ suma(2,3,1,5)
 ```
 
 ### Funciones con parámetro de Diccionario
-En `03-KWargs` se llama así "KW" por "KeyWord-Palabra clave", porque al momento de llamar a la función se le debe de pasar el parámetro con su nombre.
+En [`03-KWargs`][funcKWargs] se llama así "KW" por "KeyWord-Palabra clave", porque al momento de llamar a la función se le debe de pasar el parámetro con su nombre.
 -  Al pasar el parámetro con su nombre, este parámetro dentro de la función es un "Diccionario de datos" ({nombre=valor}).
 
 ```sh
@@ -322,7 +323,7 @@ get_product(id=21, nombre="Python", desc="Función usando KWargs.")
 
 
 ### Función que devuelva un dato
-En `04-Return` se hizo una función que después de operar devuelve un valor.
+En [`04-Return`][funcReturn] se hizo una función que después de operar devuelve un valor.
 - La palabra reservada Return dentro de una función, se usa para devolver un valor.
 
 ```sh
@@ -337,7 +338,7 @@ print(c)
 ```
 
 ### Función accediendo a una variable global
-En `05-Variablle_Global` se hizo un ejemplo de como acceder a una variable fuera de la función.
+En [`05-Variablle_Global`][funcVariableGlobal] se hizo un ejemplo de como acceder a una variable fuera de la función.
 - Para acceder a la variable se debe de usar la palabra reservada 'global' seguido del 'nombre de la variable'.
 
 ```sh
@@ -378,7 +379,7 @@ print(inicio)
 ## TIPOS AVANZADOS
 
 ### Listas
-En `01-Listas` se hizo los tipos de listas en que se pueden crear.
+En [`01-Listas`][tipAvLista] se hizo los tipos de listas en que se pueden crear.
 - Para crear una lista solo vasta usar los corchetas y agregar datos dentros.
 
 ```sh
@@ -402,7 +403,7 @@ caracteres= list("caracteres") # obtenemos todas las letras separadas
 Para saber más sobre Listas puede entrar [aquí][listas]
 
 ### Acceder a los elementos de la Lista
-En `02-Accediendo_Listas` se utilizó la posición de sus indices para acceder a los elementos, al igual que se hizo con los [String][stringReadme].
+En [`02-Accediendo_Listas`][tipAvAcce] se utilizó la posición de sus indices para acceder a los elementos, al igual que se hizo con los [String][stringReadme].
 ```sh
 palabras = ["Hola", "Python", "Accediendo", "Datos", "Listas", "Ejemplo"]
 palabras[0] = "Cambio"  # cambiamos el nombre indicando cual es el indice
@@ -422,7 +423,7 @@ print(numeros[4:15:2])
 ```
 
 ### Obtener los datos de una Lista
-En `03-Obtener_Datos_Lista` se realizó las formas en cómo obtener los datos de una lista.
+En [`03-Obtener_Datos_Lista`][tipAvObt] se realizó las formas en cómo obtener los datos de una lista.
 - Utilizando directamente el índice.
 ```sh
 numeros = [1, 2, 3,4,5,6,7,8]
@@ -686,15 +687,34 @@ print(nuevo_diccionario)
 [funciones]: <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
 [listas]: <https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
 
-[stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#strings>
-[parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#funciones-con-par%C3%A1metro-iterable>
-[forReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#for>
-[listasReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#listas>
+[stringReadme]: <https://github.com/YeltsinBL/Todo_Python/tree/master/Basico#strings>
+[parametroIterable]: <https://github.com/YeltsinBL/Todo_Python/tree/master/Basico#funciones-con-par%C3%A1metro-iterable>
+[forReadme]:<https://github.com/YeltsinBL/Todo_Python/tree/master/Basico#for>
+[listasReadme]:<https://github.com/YeltsinBL/Todo_Python/tree/master/Basico#listas>
 
-[buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
-[ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/05-Ordenar_Lista.py>
-[comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/06-Comprension_Lista.py>
-[tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/07-Tupla.py>
-[sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/08-Sets.py>
-[diccionario]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/09-Diccionario.py>
-[operadorDesempaquetar]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/10-Operador_Desempaquetar.py>
+[variableTipo]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/01-Tipos.py>
+[variableString]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/02-String.py>
+[variableNumero]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/03-Numeros.py>
+[variableBoolean]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/04-Boolean.py>
+
+[ctrlComparadores]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/01-Comparadores-Logicos.py>
+[ctrlIf]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/02-IfyOperadorTermario.py>
+[ctrlOperadores]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/03-Operadores_Logicos.py>
+[ctrlFor]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/04-For.py>
+[ctrlWhile]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/05-While.py>
+[ctrlLoop]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/06-Loop_Anidado.py>
+[funcFuncion]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/01-Funcion.py>
+[funcXargs]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/02-Xargs.py>
+[funcKWargs]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/03-KWargs.py>
+[funcReturn]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/04-Return.py>
+[funcVariableGlobal]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/05-Variable_Global.py>
+[tipAvLista]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/01-Listas.py>
+[tipAvAcce]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/02-Accediendo_Listas.py>
+[tipAvObt]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/03-Obtener_Datos_Lista.py>
+[buscarModificarLista]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
+[ordenarLista]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/05-Ordenar_Lista.py>
+[comprensionLista]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/06-Comprension_Lista.py>
+[tupla]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/07-Tupla.py>
+[sets]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/08-Sets.py>
+[diccionario]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/09-Diccionario.py>
+[operadorDesempaquetar]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/10-Operador_Desempaquetar.py>
