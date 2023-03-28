@@ -693,21 +693,23 @@ print(nuevo_diccionario)
 [listasReadme]:<https://github.com/YeltsinBL/Todo_Python/tree/master/Basico#listas>
 
 [variableTipo]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/01-Tipos.py>
-[variableString]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/02-String.py>
+[variableString]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/02-Strings.py>
 [variableNumero]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/03-Numeros.py>
 [variableBoolean]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Variables/04-Boolean.py>
 
-[ctrlComparadores]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/01-Comparadores-Logicos.py>
-[ctrlIf]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/02-IfyOperadorTermario.py>
+[ctrlComparadores]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/01-Comparadores_Logicos.py>
+[ctrlIf]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/02-IFyOperadorTermario.py>
 [ctrlOperadores]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/03-Operadores_Logicos.py>
 [ctrlFor]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/04-For.py>
 [ctrlWhile]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/05-While.py>
 [ctrlLoop]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Control-Flujo/06-Loop_Anidado.py>
+
 [funcFuncion]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/01-Funcion.py>
 [funcXargs]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/02-Xargs.py>
 [funcKWargs]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/03-KWargs.py>
 [funcReturn]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/04-Return.py>
 [funcVariableGlobal]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Funciones/05-Variable_Global.py>
+
 [tipAvLista]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/01-Listas.py>
 [tipAvAcce]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/02-Accediendo_Listas.py>
 [tipAvObt]:<https://github.com/YeltsinBL/Todo_Python/blob/master/Basico/Tipos-Avanzados/03-Obtener_Datos_Lista.py>
