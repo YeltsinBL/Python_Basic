@@ -686,15 +686,15 @@ print(nuevo_diccionario)
 [funciones]: <https://docs.python.org/3/tutorial/controlflow.html#defining-functions>
 [listas]: <https://docs.python.org/3/library/stdtypes.html?highlight=list#lists>
 
-[stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#strings>
-[parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#funciones-con-par%C3%A1metro-iterable>
-[forReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#for>
-[listasReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/README.md#listas>
+[stringReadme]: <https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#strings>
+[parametroIterable]: <https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#funciones-con-par%C3%A1metro-iterable>
+[forReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#for>
+[listasReadme]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/README.md#listas>
 
-[buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
-[ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/05-Ordenar_Lista.py>
-[comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/06-Comprension_Lista.py>
-[tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/07-Tupla.py>
-[sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/08-Sets.py>
-[diccionario]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/09-Diccionario.py>
-[operadorDesempaquetar]:<https://github.com/YeltsinBL/Python_Basic/blob/master/Tipos-Avanzados/10-Operador_Desempaquetar.py>
+[buscarModificarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/04-Buscar_Modificar_Lista.py>
+[ordenarLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/05-Ordenar_Lista.py>
+[comprensionLista]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/06-Comprension_Lista.py>
+[tupla]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/07-Tupla.py>
+[sets]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/08-Sets.py>
+[diccionario]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/09-Diccionario.py>
+[operadorDesempaquetar]:<https://github.com/YeltsinBL/Python_Basic/blob/master/basico/Tipos-Avanzados/10-Operador_Desempaquetar.py>
