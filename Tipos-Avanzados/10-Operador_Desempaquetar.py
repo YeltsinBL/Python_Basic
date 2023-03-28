@@ -23,7 +23,7 @@ print(*numero_lista, *numero_tupla)
 # Diccionarios
 datos = {"id": 1, "nombre": "Python"}
 ubicacion = {"pais": "Peru", "codigo": 0000}
-nuevo_diccionario = {**datos, 
-                     "ubicacion": [{**ubicacion, "numero":1111}], 
+nuevo_diccionario = {**datos,
+                     "ubicacion": [{**ubicacion, "numero": 1111}],
                      "descripcion": "prueba"}
 print(nuevo_diccionario)
