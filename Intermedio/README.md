@@ -42,16 +42,21 @@ class Metodo:
         self.nombre = nombre
 
     def sin_parametro(self) -> str:
-        """Método con parámetro"""
+        """Método sin parámetro"""
         return "Método sin parámetro"
 
     def con_parametro(self, nomb) -> str:
         """Método con parámetro"""
         return nomb + " " + self.nombre
     def __metodo_privado(self) -> int:
+        """Método privado"""
         return 1
     def uso_metodo_privado(self) -> str:
         return f"Valor del método privado: {self.__metodo_privado()}"
+    @staticmethod
+    def valor_pi():
+        """Método Estático"""
+        return 3.1416
 ```
 > Nota: mos métodos son funciones, pero aquí es obligatorio llevar la palabra reservada 'self' para poder acceder a los atributos de la clase. Al igual que los atributos, también hay métodos privados.
 
