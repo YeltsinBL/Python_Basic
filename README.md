@@ -34,6 +34,8 @@ En la parte [`Intermedia`][intermedio] se encuentran:
 - [Clases][clases]
   - Clase y atributos
   - Constructor
+  - Métodos
+  - Decorador Property
 
 
 [//]: # (Enlaces a la documentación)

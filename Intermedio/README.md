@@ -55,8 +55,25 @@ class Metodo:
 ```
 > Nota: mos métodos son funciones, pero aquí es obligatorio llevar la palabra reservada 'self' para poder acceder a los atributos de la clase. Al igual que los atributos, también hay métodos privados.
 
+- En [`04-Decorador_Property`][decoradorProperty] se trabajó solo con el atributo privado.
+```sh
+class Decorador:
+    def __init__(self, nombre) -> None:
+        self.__nombre = self.__metodo_privado(nombre)
+    def __metodo_privado(self, nombre) -> str:
+        return nombre.upper()
+    @property
+    def nombre(self):
+        return self.__nombre
+    @nombre.setter
+    def nombre(self, valor):
+        self.__nombre = self.__metodo_privado(valor)
+```
+> Nota: el decorador property solo trabaja con los atributos privados para poder obtener y actualizar su valor
+
 [//]: # (Enlaces a la documentación)
 
 [clase]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Intermedio/Clases/01-Clase.py>
 [constructor]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Intermedio/Clases/02-Constructor.py>
 [metodo]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Intermedio/Clases/03-Metodo.py>
+[decoradorProperty]: <https://github.com/YeltsinBL/Todo_Python/blob/master/Intermedio/Clases/04-Decorador_Property.py>
