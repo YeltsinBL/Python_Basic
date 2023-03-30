@@ -5,9 +5,12 @@ class PrimeraClase:
     # Este constructor sirve para inicializar los atributos de la clase
     def __init__(self) -> None:
         self.nombre = "Python"
+        self.__descripcion = "Atributo pribado"
 
 primera = PrimeraClase()
 print(primera.nombre)
+# error de acceso, es un atributo privado de solo acceso en la clase
+# print(primera.__descripcion)
 
 class SegundaClase:
     """Clase con constructor con parámetros obligatorio y opcional"""
