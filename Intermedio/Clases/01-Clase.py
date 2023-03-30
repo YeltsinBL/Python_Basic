@@ -1,6 +1,5 @@
 """Clases"""
 
-
 class PrimeraClase:
     """Creación de una clase"""
     # Atributos de la clase

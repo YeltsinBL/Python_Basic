@@ -33,6 +33,7 @@ En la parte [`Básica`][basico] se encuentran:
 En la parte [`Intermedia`][intermedio] se encuentran:
 - [Clases][clases]
   - Clase y atributos
+  - Constructor
 
 
 [//]: # (Enlaces a la documentación)
